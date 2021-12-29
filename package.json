@@ -8,6 +8,7 @@
 		"lint": "eslint --cache . --ext .js,.ts,.tsx --ignore-path .gitignore",
 		"prettier": "prettier --check . --ignore-path .gitignore",
 		"check-types": "tsc",
+		"validate": "npm-run-all --parallel check-types lint prettier",
 		"lint:fix": "eslint --cache --fix . && prettier --write .",
 		"prepare": "husky install"
 	},
