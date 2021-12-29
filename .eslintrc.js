@@ -10,6 +10,9 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 13,
     sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true,
+    },
   },
   plugins: [
     '@typescript-eslint',
