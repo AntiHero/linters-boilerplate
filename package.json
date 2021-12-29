@@ -7,6 +7,7 @@
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"lint": "eslint --cache . --ext .js,.ts,.tsx --ignore-path .gitignore",
 		"prettier": "prettier --check . --ignore-path .gitignore",
+		"check-types": "tsc",
 		"lint:fix": "eslint --cache --fix . && prettier --write .",
 		"prepare": "husky install"
 	},
